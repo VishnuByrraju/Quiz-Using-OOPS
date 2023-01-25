@@ -3,7 +3,7 @@ from data import question_data
 from quiz_brain import QuizBrain
 question_bank = []
 for i in question_data:
-    question = Question(i['question'], i['correct_answer'])
+    question = Question(i['text'], i['answer'])
     question_bank.append(question)
 
 quiz = QuizBrain(question_bank)
